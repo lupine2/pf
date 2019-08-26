@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>HANA Portfolio 2019</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- fontawesome 추가 -->
+  <script src="https://kit.fontawesome.com/a708009916.js"></script>
+  <!-- sticky header UI-->
+  <script src="js/sticky.js"></script>
+  <script src="js/main.js"></script>
+  <!-- 제이쿼리 -->
+  <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+  <!-- 타이핑 효과 -->
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script
+    src="https://www.cssscript.com/demo/simple-typewriter-effect-pure-javascript-typewriterjs/typewriter.js"></script>
+  <!-- 팬시박스3(라이트박스) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <!-- 사용자 css -->
+  <link rel="stylesheet" href="css/grid.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- 파비콘 -->
+  <link rel="shortcut icon" href="images/favi.ico">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <h1>
+        <a href="#">
+          <img src="images/logo3.svg" alt="">
+        </a>
+      </h1>
+      <div class="line"></div>
+      <p id="typing"></p>
+      <a href="#portfolio" class="btn">MORE</a>
+    </div>
+  </header>
+
+  <nav id="main-menu">
+    <ul class="container menu-list">
+      <li><a href="#">home</a></li>
+      <li><a href="#about">about</a></li>
+      <li><a href="#portfolio">portfolio</a></li>
+      <li><a href="#contact">contact</a></li>
+    </ul>
+    <!-- 모바일용 토글 버튼 -->
+    <button id="toggle">
+      <img src="images/menu.svg" alt="">
+    </button>
+  </nav>
+
+  <section id="about">
+    <div class="container">
+      <h2></h2>
+    </div>
+    <div class="row container">
+      <article class="col-6 image">
+        <div class="hover">
+          <p>
+            <span>저</span>하면 떠오르는 동물은<br>
+            <span>토끼</span>라고 합니다<br>
+            <span>(이유는 딱히 없으나 딱 떠오른다고 합니다)</span>
+          </p>
+          <img src="images/about2.svg" alt="">
+        </div>
+        <img src="images/about1.svg" alt="about img">
+      </article>
+      <article class="col-6 text-box">
+        <div class="text">
+          <h3>Name</h3>
+          <p>이하나</p>
+          <br>
+          <h3>Birth</h3>
+          <p>1999. 01. 07</p>
+          <br>
+          <h3>Skills</h3>
+          <ul>
+            <li>- Illustrator / Photoshop</li>
+            <li>- HTML</li>
+            <li>- CSS</li>
+            <li>- JavaScript / jQuery</li>
+          </ul>
+          <br>
+          <h3>About Me</h3>
+          <p>아직은 노는 게 더 좋은 나이인 20대지만 취업을 하게 된다면 지금보다 더 열심히 배우고 발전해 다양한 커리어를 쌓고 싶은 예비 웹 퍼블리셔 & 웹 디자이너 지망생입니다</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <div class="container">
+      <h2></h2>
+    </div>
+    <div class="row container">
+      <ul>
+        <li class="mb-2">
+          <a data-fancybox="gallery" data-caption="시계 브랜드 FOCE 홈페이지 리뉴얼" href="images/pf2-1.png">
+            <img src="images/pf2.jpg" alt="">
+          </a>
+        </li>
+        <li class="mb-2">
+          <a data-fancybox="gallery" data-caption="팀 프로젝트 - 대웅제약 홈페이지 리뉴얼(회사소개, 고객센터)" href="images/pf3-1.png">
+            <img src="images/pf3.jpg" alt="">
+          </a>
+        </li>
+        <li class="mb-2">
+          <a data-fancybox="gallery" data-caption="메가커피 홈페이지 리뉴얼" href="images/pf4-1.png">
+            <img src="images/pf4.jpg" alt="">
+          </a>
+        </li>
+        <li>
+          <a data-fancybox="gallery" data-caption="모바일 청첩장" href="images/pf1-1.png">
+            <img src="images/pf1.jpg" alt="">
+          </a>
+        </li>
+        <li>
+          <a data-fancybox="gallery" data-caption="날씨앱 디자인 시안" href="images/pf5-1.png">
+            <img src="images/pf5.jpg" alt="">
+          </a>
+        </li>
+        <li>
+          <a data-fancybox="gallery" data-caption="던킨도너츠 이벤트 페이지 디자인 시안" href="images/pf6-1.png">
+            <img src="images/pf6.jpg" alt="">
+          </a>
+        </li>
+      </ul>
+      <a class="btn" href="portfolio.html">MORE</a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2></h2>
+    </div>
+    <div class="container">
+      <form action="">
+        <input type="text" placeholder="이름" required>
+        <input type="email" placeholder="이메일" required>
+        <br>
+        <textarea name="memo" id="memo" cols="80" rows="8" placeholder="내용 입력" required></textarea>
+        <br>
+        <input type="submit" value="보내기">
+        <input type="reset" value="다시 작성">
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p class="copy">2019 Copyright &copy; HANA</p>
+  </footer>
+
+
+  <script>
+    var typing = document.getElementById('typing');
+
+    var typewriter = new Typewriter(typing, {
+      loop: true
+    });
+
+    typewriter.typeString('Web Publishing')
+      .pauseFor(2500)
+      .deleteAll()
+      .typeString('Web Design')
+      .pauseFor(2500)
+      .deleteAll()
+      .typeString('Portfolio')
+      .pauseFor(2500)
+      .deleteAll()
+      .typeString('Welcome')
+      .pauseFor(2500)
+      .start();
+  </script>
+</body>
+
+</html>
