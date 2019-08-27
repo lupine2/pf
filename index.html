@@ -55,6 +55,8 @@
     </button>
   </nav>
 
+  <a class="up-btn" href="#"><i class="fas fa-angle-up"></i></a>
+
   <section id="about">
     <div class="container">
       <h2></h2>
@@ -158,6 +160,7 @@
 
 
   <script>
+    // text typing
     var typing = document.getElementById('typing');
 
     var typewriter = new Typewriter(typing, {
@@ -176,6 +179,19 @@
       .typeString('Welcome')
       .pauseFor(2500)
       .start();
+
+    //  up btn
+    $(function () {
+      $(window).scroll(function () {
+        var s = $(window).scrollTop();
+        console.log(s)
+        if (s > 150) {
+          $('.up-btn').addClass('show');
+        } else {
+          $('.up-btn').removeClass('show');
+        }
+      });
+    });
   </script>
 </body>
 

@@ -196,6 +196,27 @@ header .btn:hover{
   }
 }
 
+/* up-btn */
+.up-btn{
+  position: fixed;
+  bottom: 80px; right: 300px;
+  z-index: 9;
+  background-color: #F2DC81;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 50px;
+  font-size: 1.2em;
+  display: none;
+}
+.up-btn.show{
+  display: block;
+}
+@media (max-width: 1200px) {
+  .up-btn{
+    position: fixed;
+    bottom: 20px; right: 20px;
+  }
+}
 
 /* about */
 #about{
@@ -498,6 +519,7 @@ footer{
 #sub01 header {
   height: 300px;
 }
+
 /* pf-pub */
 #sub01 #pf-pub {
   padding-top: 7em;
